@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.fondo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo img {
+  width: 100%;
+}
+
+.texto-header h2 {
+  font-size: clamp(45px, 4vw, 55px);
+  margin: 0 15px 0 15px;
+}
+
+.texto-header p {
+  font-size: clamp(25px, 2vw, 25px);
+  margin: 0 15px 0 15px;
+
+}
+
+.prepration-time {
+  margin: 40px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  line-height: 40px;
+  text-align: start;
+  color: hsl(30, 10%, 34%);
+
+}
+
+.prepration-time h3 {
+  font-size: clamp(20px, 3vw, 30px);
+  font-weight: 800;
+  color: hsl(332, 51%, 32%);
+}
+
+.prepration-time span {
+  font-size: clamp(23px, 3vw, 30px);
+  color: hsl(7, 5%, 35%);
+  font-weight: 600;
+}
+
+.prepration-time li {
+  font-size: clamp(20px, 3vw, 30px);
+
+}
+
+.ingredients {
+  margin-left: 15px;
+  line-height: 50px;
+  color: hsl(7, 5%, 35%);
+
+}
+
+.ingredients h3 {
+  color: hsl(14, 45%, 36%);
+  margin-left: 20px;
+  font-size: clamp(30px, 3vw, 30px);
+}
+
+.intructions {
+  margin: 40px;
+}
+
+.intructions h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: clamp(20px, 3vw, 30px);
+  font-size: clamp(30px, 3vw, 30px);
+}
+
+.intructions span {
+  font-size: clamp(23px, 3vw, 30px);
+  color: hsl(7, 5%, 35%);
+  font-weight: 600;
+}
+
+.intructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.intructions ol li {
+  line-height: 1.5
+}
+
+.nutrition {
+  margin-left: 15px;
+  color: hsl(7, 5%, 35%);
+}
+
+.nutrition h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: clamp(30px, 3vw, 30px);
+}
+
+.nutrition p {
+  line-height: 1.5rem;
+  font-size: clamp(20px, 3vw, 30px);
+}
+
+.nutrition table {
+  border-collapse: collapse;
+}
+
+.nutrition table td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 20px;
+}
+
+.nutrition table span {
+  color: hsl(14, 45%, 36%);
+}
+
+@media(width >=1440px) {
+  .fondo img {
+    width: 95%;
+    padding: 0px;
+    border-radius: 20px;
+    border: 1px solid hsl(30, 18%, 87%);
+    margin: 30px 0px 20px 0px;
+  }
+
+  .nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .nutrition table td {
+    padding: 30px;
+  }
+}
